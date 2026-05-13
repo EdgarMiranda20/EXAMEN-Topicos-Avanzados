@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale-1.0">
+        <title>Document</title>
+        
+        <link rel="stylesheet" href="css/dis-tienda.css">
+    </head>
+    <body>
+        <header>
+            <h1>TO-DO</h1>
+          
+            <div class="container-search">
+             <form id="formularioNuevo">
+                <input type="text" id="inputtarea" placeholder="Producto..."-/>   
+                <button class="btn-salir"><i class="bi bi-box-arrow-right"></i>Agregar producto</button>
+                
+             </form>
+             <a href="../editar.html"  class="btn-nuevo">
+                <i class="bi bi-plus-square-fill"></i>   
+             </a>
+
+            </div> 
+        </header>
+
+        <main>
+            <ul id="editar">
+               <table>
+                   <thead>
+                     <tr>
+                        <th>Nombre Producto</th>
+                        <th>Precio</th>
+                        <th>Estado</th>
+                        <th>Operacion</th>
+                     </tr>
+                   </thead>
+
+                   <tbody id="tabla">
+                    <tr>
+                       <td>Hacer Tarea</td>
+                       <td>Pendiente</td>
+                       <td>
+                        
+                         
+                         <button class="btn-eliminar">Eliminar</button>
+                       </td> 
+                    </tr>
+                   </tbody>
+
+               </table>
+            </ul>
+        </main>
+        <script src="js/obtenerProducto.js"></script>
+        <script src="js/crearProducto.js"></script>
+        <script src="js/eliminarProducto.js"></script>
+        
+    </body>
+</html>
